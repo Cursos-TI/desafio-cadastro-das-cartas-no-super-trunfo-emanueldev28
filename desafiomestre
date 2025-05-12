@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+//desafio das cartas
+//dados das cartaS
+
+int main() {
+
+int PONTOS1 = 13, PONTOS2 = 32 ;
+float PIB1 = 560000, AREA1 = 102, PIB2 = 830000, AREA2 = 218;
+unsigned long int POPULACAO1 = 340000, POPULACAO2 =1200000;
+char CODIGO1[5] = "A1", CIDADE1[20] = "PAULISTA", ESTADO1[5] = "A" , CODIGO2[5] = "B2", CIDADE2[20] = "RECIFE", ESTADO2[5] = "B" ;
+float DENSIDADEPOP1 = POPULACAO1 / AREA1, DENSIDADEPOP2 = POPULACAO2 / AREA2, PIBPERCAP1 = PIB1 / POPULACAO1, PIBPERCAP2 = PIB2 / POPULACAO2;
+float SUPERPODER1 = AREA1 + PIB1 + PIBPERCAP1 + (1/DENSIDADEPOP1) , SUPERPODER2 = AREA2 + PIB2 + PIBPERCAP2 + (1/DENSIDADEPOP2);
+
+
+//impressoes carta 1
+
+
+printf("carta 1.\n");
+printf("ESTADO:%s\n", ESTADO1);
+printf("CIDADE: %s\n", CIDADE1);
+printf("CODIGO: %s\n", CODIGO1);
+printf("PIB: %.2f\n", PIB1);
+printf("AREA: %.2f km2\n", AREA1);
+printf("POPULACAO: %lu\n", POPULACAO1);
+printf("PONTOS TURISTICOS: %d\n", PONTOS1);
+printf("DENSIDADE POPULACIONAL: %.5f\n", DENSIDADEPOP1);
+printf("PIB PER CAPITA: %.5f\n", PIBPERCAP1);
+
+
+//carta 2
+
+
+//impressoes carta 2
+
+
+printf("Carta 2\n");
+printf("Estado:%s\n", ESTADO2);
+printf("Cidade: %s\n", CIDADE2);
+printf("Codigo: %s\n", CODIGO2);
+printf("PIB: %.2f\n", PIB2);
+printf("Area: %.2f km2\n", AREA2);
+printf("Populacao: %lu\n", POPULACAO2);
+printf("Pontos Turisticos: %d\n", PONTOS2);
+printf("DENSIDADE POPULACIONAL: %.5f\n", DENSIDADEPOP2);
+printf("PIB PER CAPITA: %.5f\n", PIBPERCAP2);
+
+//comparaçoes das cartas;
+
+printf("-----Comparação Das Cartas!-----\n");
+printf("População:carta 1 vence= %d\n", POPULACAO1 > POPULACAO2 );
+printf("Area:carta 1 vence= %d\n", AREA1 > AREA2);
+printf("PIB:carta 1 vence= %d\n", PIB1 > PIB2);
+printf("Pontos Turisticos:carta 1 vence= %d\n", PONTOS1 > PONTOS2);
+printf("Densidade Populacional:carta 1 vence= %d\n", DENSIDADEPOP1 > DENSIDADEPOP2);
+printf("PIB per Capita:carta 1 vence= %d\n", PIBPERCAP1 > PIBPERCAP2);
+printf("Super Poder:carta 1 vence= %d\n", SUPERPODER1 > SUPERPODER2);
+
+
+
+
+
+//cartas finalizadas
+
+return 0;
+
+
+
+}
